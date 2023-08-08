@@ -17,8 +17,8 @@
 
     # reverse_proxy frontend.railway.internal:3000 # proxy all requests for /* to the frontend, change domain and port as needed
     # reverse_proxy zdk.no
-    reverse_proxy zdk.no {
-        dynamic txt asuid.zdk.no
+    reverse_proxy {
+        dynamic a zdk.no
     }
 
     # the handle_path directive will strip /api/ from the path before proxying
